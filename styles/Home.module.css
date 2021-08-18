@@ -1,4 +1,4 @@
-.container {
+/* .container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -118,4 +118,26 @@
     width: 100%;
     flex-direction: column;
   }
+} */
+
+
+.mole {
+  display: none;
+}
+
+.mole-hole {
+  overflow: hidden;
+}
+
+.moles {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  align-items: center;
+}
+
+.moles > *:nth-of-type(4),
+.moles > *:nth-of-type(5) {
+  transform: translate(50%, 0)
 }
